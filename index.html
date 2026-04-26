@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tarea CSS</title>
+        <style>
+            .Fondo{
+                background: repeating-linear-gradient(rgb(103, 167, 239)20px,rgb(103, 167, 239)21px,transparent 10px,transparent 50px),
+                            repeating-linear-gradient(90deg,rgb(32, 122, 248)20px,rgb(32, 122, 248)21px,transparent 10px,transparent 50px);
+                background-size: cover;
+                perspective: 1200px;
+                min-height: 150vh;
+            }
+            body{
+                min-height: 150vh;
+            }
+            .Libro{
+                position: relative;
+                height: 500px;
+                width: 500px;
+                transform-style: preserve-3d;
+            }
+            .Parte3{
+                position: absolute;
+                background-color: rgb(94, 15, 15);
+                width: 350px;
+                height: 450px;
+                border-radius: 20px 20px 20px 20px;
+                top: 50%;
+                left:115%;
+            }
+            .Lomo{
+                position: absolute;
+                background-color: rgb(94, 15, 15);
+                width:50px;
+                height: 450px;
+                border-radius: 20px 20px ;
+                top: 50%;
+                left:110%;
+                z-index: 1;
+            }
+            .Hoja{
+                position: absolute;
+                background-color: white;
+                width: 362px;
+                height: 430px;
+                border-radius: 20px 20px 20px 20px;
+                top: 52%;
+                left: 110%;
+            }
+            .contenido{
+                width: 300px;
+                height: 400px;
+                position: absolute;
+                top: 15px;
+                left:49px;
+                border-radius: 20px 20px 20px 20px;
+            }
+            .Parte1{
+                position: absolute;
+                background-image: url("fotos/descarga\ \(14\).jpg");
+                background-size: 100%;
+                width: 350px;
+                height: 450px;
+                border-radius: 20px 20px 20px 20px;
+                top: 50%;
+                left:115%;
+                z-index: 1000;
+                transition: all 2s ease;
+                transform-origin: left center;
+                transform-style: preserve-3d;
+
+            }
+            .Parte1:hover{
+                transform: rotateY(-145deg);
+            }
+            .letras{
+            position:absolute;
+            width:300px;
+            height:450px;
+            top:-90px;
+            left:5%;
+            z-index: 1000;
+            backface-visibility: hidden;
+            }
+            .camara{
+                position:absolute;
+                width:300px;
+                height:300px;
+                top:25%;
+                left:10%;
+                z-index: 1;
+                animation-name: temblar;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .camara2{
+                position:absolute;
+                width:300px;
+                height: 300px;
+                top:70%;
+                left:80%;
+                z-index: 1;
+                animation-name: temblar;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes temblar {
+                0% { transform: translate(0, 0) rotate(0deg); }
+                25% { transform: translate(-5px, 5px) rotate(-5deg); }
+                50% { transform: translate(5px, -5px) rotate(5deg); }
+                75% { transform: translate(-5px, 5px) rotate(-5deg); }
+                100% { transform: translate(0, 0) rotate(0deg); }
+            }
+            .Estrella1{
+                position:absolute;
+                width:100px;
+                height: 100px;
+                top:0%;
+                left: 0%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella2{
+                position:absolute;
+                width:90px;
+                height:90px;
+                top:0%;
+                left: 40%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella3{
+                position:absolute;
+                width:80px;
+                height:80px;
+                top:0%;
+                left: 20%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella4{
+                position:absolute;
+                width:40px;
+                height:40px;
+                top:0%;
+                left: 10%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella5{
+                position:absolute;
+                width:50px;
+                height:50px;
+                top:0%;
+                left: 90%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella6{
+                position:absolute;
+                width:100px;
+                height:100px;
+                top:0%;
+                left: 60%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella7{
+                position:absolute;
+                width:50px;
+                height:50px;
+                top:0%;
+                left: 75%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella8{
+                position:absolute;
+                width:110px;
+                height:110px;
+                top:0%;
+                left:90%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .Estrella9{
+                position:absolute;
+                width:110px;
+                height:110px;
+                top:0%;
+                left:65%;
+                z-index: 1;
+                transition: all 0.5s ease;
+                animation-name: lluvia;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes lluvia {
+                0% { transform: translateY(0) rotate(0deg); }
+                100% { transform: translateY(1000px) rotate(360deg); }
+            }
+            .audio{
+                position: absolute;
+                width: 300px;
+                top: 10px;
+                left: 15px;
+                z-index: 1000;
+            }
+            .friends{
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                top: 200px;
+                left: 999px;
+                z-index: 1400;
+                animation-name: temblar;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+            }
+            .ranita{
+                position: absolute;
+                width:500px;
+                height: 500px;
+                top:400px;
+                left:50px;
+                z-index: 1400;
+                animation-name: temblar;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        </style>
+    </head>
+<body>
+    <img class="ranita" src="fotos/e44827919710d14f45e79a5ef3d482fc-removebg-preview.png">
+    <img class="friends" src="fotos/100a87067a6c2ac299c4f9a1bc9506b6-removebg-preview.png">
+    <audio class="audio" src="fotos/doge_goober57-elevator-theme-outro-music-or-game-music-186869.mp3" controls autoplay loop></audio>
+    <img class="camara2" src="fotos/2f2ea92b32e628f3709dac1e0e8f97f3-removebg-preview.png">
+    <img class="camara" src="fotos/3e938cf7db35243f8694dfaa04943fd7-removebg-preview.png">
+    <img class="Estrella9" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella8" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella7" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella6" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella5" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella4" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella3" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella2" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <img class="Estrella1" src="fotos/dc4047fa57f9697244e84026ce138d9f-removebg-preview.png">
+    <div class="Fondo">
+    <div class="Accion">
+    <div class="Libro">
+    <div class="Parte1">
+      <img class="letras" src="fotos/descarga__14_-removebg-preview.png">
+    </div>
+    <div class="Lomo"></div>
+    <div class="Parte3"></div>
+    <div class="Hoja">
+    <img class="contenido" src="fotos/Brown and Green Illustrated Friendship Photo Collage.png">
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
